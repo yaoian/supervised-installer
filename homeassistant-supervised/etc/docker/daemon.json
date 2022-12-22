@@ -1,9 +1,14 @@
 {
+    "data-root": "/mnt/sda1/docker/",
     "log-driver": "journald",
     "storage-driver": "overlay2",
     "ip6tables": true,
     "experimental": true,
     "log-opts": {
         "tag": "{{.Name}}"
-    }
+    },
+    "registry-mirrors": [
+        "https://mirror.baidubce.com/",
+        "https://hub-mirror.c.163.com"
+      ]
 }
